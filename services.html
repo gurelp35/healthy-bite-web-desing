@@ -1,0 +1,137 @@
+<!-- =======================================================
+  File: services.html
+  Project: Healthy Bite
+  Author: Pakize Gurel
+  Description: Services page focused on image presentation and styling.
+======================================================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Healthy Bite</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Go to Home">
+      Healthy<span>Bite</span>
+    </a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <ul id="primaryNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="services.html" aria-current="page">Services</a></li>
+        <li><a href="howitworks.html">How It Works</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open menu"
+      aria-controls="primaryNav"
+      aria-expanded="false"
+      onclick="toggleMenu()"
+    >
+      ☰
+    </button>
+  </header>
+
+  <!-- ==================== SERVICES HERO ==================== -->
+  <section class="services-hero" aria-label="Services hero section">
+    <img
+      src="assets/images/hero.jpg"
+      alt="Healthy meal variety"
+      class="services-hero-img"
+    />
+    <!-- Image source: Unsplash (Odiseo Castrejon) -->
+
+    <div class="hero-overlay">
+      <h1>Quick &amp; Healthy Meal Ideas</h1>
+      <p>Nutritious recipes and snack suggestions for every lifestyle.</p>
+      <a class="btn-primary" href="contact.html">Get Started</a>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES CONTENT ==================== -->
+  <main class="container services-content">
+    <section class="services-intro">
+      <h2>Our Nutrition Solutions</h2>
+      <p>
+        At Healthy Bite, we make healthy eating simple and enjoyable. From meal prep to smoothie inspiration,
+        our services are designed to help busy students and professionals stay nourished.
+      </p>
+    </section>
+
+    <!-- ===== SERVICE CARDS (image styling focus) ===== -->
+    <section class="features" aria-label="Service cards">
+      <article class="feature-card">
+        <img src="assets/images/mealprep.jpg" alt="Meal prep planning" />
+        <!-- Image source: Unsplash -->
+        <div class="feature-card-body">
+          <h3>Meal Prep Plans</h3>
+          <p>Weekly prep plans with easy, balanced recipes to save time and eat better.</p>
+        </div>
+      </article>
+
+      <article class="feature-card">
+        <img src="assets/images/recipes.jpg" alt="Healthy recipe ideas" />
+        <!-- Image source: Unsplash -->
+        <div class="feature-card-body">
+          <h3>Healthy Recipe Ideas</h3>
+          <p>Fresh, fast, and delicious recipes that fit your schedule and taste.</p>
+        </div>
+      </article>
+
+      <article class="feature-card">
+        <img src="assets/images/coaching.jpg" alt="Nutrition coaching session" />
+        <!-- Image source: Unsplash -->
+        <div class="feature-card-body">
+          <h3>Nutrition Coaching</h3>
+          <p>Simple, realistic habits with guidance to help you reach your personal goals.</p>
+        </div>
+      </article>
+
+      <article class="feature-card">
+        <img src="assets/images/smoothies.jpg" alt="Healthy smoothie and snacks" />
+        <!-- Image source: Unsplash -->
+        <div class="feature-card-body">
+          <h3>Smoothie &amp; Snack Ideas</h3>
+          <p>Smart snack and smoothie recipes to boost energy throughout the day.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2025 Healthy Bite | Designed for university web design project</p>
+      <p>
+        Contact: <a href="mailto:pakizegurel@hotmail.com">pakizegurel@hotmail.com</a> |
+        Kingston upon Thames, UK
+      </p>
+    </div>
+  </footer>
+
+  <!-- ==================== INLINE JS (no extra files) ==================== -->
+  <script>
+    function toggleMenu() {
+      const navList = document.getElementById("primaryNav");
+      const btn = document.querySelector(".menu-toggle");
+      if (!navList || !btn) return;
+
+      navList.classList.toggle("show");
+      const expanded = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", String(!expanded));
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!-- =======================================================
+  File: contact.html
+  Project: Healthy Bite
+  Author: Pakize Gurel
+  Description: Contact page with working form and embedded map.
+  ======================================================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Healthy Bite</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header">
+    <div class="logo">Healthy<span>Bite</span></div>
+    <nav class="nav" id="navMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="howitworks.html">How It Works</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <!-- ==================== CONTACT CONTENT ==================== -->
+  <main class="contact-content">
+    <section class="contact-header">
+      <h1>Contact Us</h1>
+      <p>
+        Have a question, idea, or feedback? We’d love to hear from you!  
+        Fill out the form below or visit us in Kingston upon Thames.
+      </p>
+    </section>
+
+    <!-- ===== CONTACT FORM ===== -->
+    <section class="contact-form-section">
+      <form id="contactForm" novalidate>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
+
+    <!-- ===== EMBEDDED GOOGLE MAP ===== -->
+    <section class="contact-map">
+      <h2>Find Us</h2>
+      <!-- Google Maps Embed - Kingston upon Thames -->
+      <!-- Embedded external service as required -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19919.06288905582!2d-0.311577!3d51.409627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487608f5dfb3e01f%3A0xb1de601d34f693b0!2sKingston%20upon%20Thames%2C%20UK!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>© 2025 Healthy Bite | Designed for university web design project</p>
+      <p>
+        Contact: <a href="mailto:pakizegurel@hotmail.com">pakizegurel@hotmail.com</a> |
+        Kingston upon Thames, UK
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

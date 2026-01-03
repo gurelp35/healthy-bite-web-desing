@@ -1,0 +1,90 @@
+<!-- =======================================================
+  File: index.html
+  Project: Healthy Bite
+  Author: Pakize Gurel
+  Description: Home (Landing) page for the Healthy Bite website.
+  ======================================================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthy Bite | Quick Nutrition Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- ==================== HEADER / NAVIGATION ==================== -->
+  <header class="site-header">
+    <div class="logo">Healthy<span>Bite</span></div>
+    <nav class="nav" id="navMenu">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="howitworks.html">How It Works</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Mobile menu toggle -->
+    <button class="menu-toggle" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Quick nutrition solutions</h1>
+      <p>Healthy eating made easy for you.</p>
+      <a href="services.html" class="btn-primary">View Services</a>
+    </div>
+    <!-- Image from Unsplash - credited inline -->
+    <img src="assets/images/home.jpg" alt="Healthy salad bowl" class="home-img" />
+    <!-- Image source: Unsplash -->
+  </section>
+
+  <!-- ==================== INTRO SECTION ==================== -->
+  <section class="intro">
+    <h2>Healthy Bite – Nourishing your journey</h2>
+    <p>
+      At <strong>Healthy Bite</strong>, we help busy students and professionals
+      maintain a balanced lifestyle with quick recipes, snack ideas, and practical
+      nutrition tips. Discover how simple it can be to eat well even on the go!
+    </p>
+    <a href="about.html" class="btn-secondary">Learn More</a>
+  </section>
+
+  <!-- ==================== FEATURES SECTION ==================== -->
+  <section class="features">
+  <div class="feature-card">
+    <img src="assets/images/homestudents.jpg" alt="Nutrition for students" />
+    <h3>Nutrition tips for students</h3>
+    <p>Quick and practical advice for healthy study sessions.</p>
+  </div>
+
+  <div class="feature-card">
+    <img src="assets/images/recipes.jpg" alt="Easy healthy recipes" />
+    <h3>Easy healthy recipes</h3>
+    <p>Simple meals designed for your busy lifestyle.</p>
+  </div>
+
+  <div class="feature-card">
+    <img src="assets/images/snacks.jpg" alt="Healthy snacks ideas" />
+    <h3>Healthy snack suggestions</h3>
+    <p>Nutritious and tasty snack ideas for energy throughout the day.</p>
+  </div>
+</section>
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>© 2025 Healthy Bite | Designed for university web design project</p>
+      <p>
+        Contact: <a href="mailto:pakizegurel@hotmail.com">pakizegurel@hotmail.com</a> |
+        Kingston upon Thames, UK
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
