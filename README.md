@@ -54,5 +54,5 @@ It reflects applied knowledge in layout planning, visual hierarchy, and interfac
 ## Author
 
 Pakize Gurel  
-BA (Hons) Digital Media  
+BSc (Hons) Digital Media  
 University of Roehampton
