@@ -2,7 +2,7 @@
   File: contact.html
   Project: Healthy Bite
   Author: Pakize Gurel
-  Description: Contact page with working form and embedded map.
+  Description: Contact page with email-draft form and embedded map.
   ======================================================= -->
 
 <!DOCTYPE html>
@@ -29,7 +29,7 @@
         <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
-    <button class="menu-toggle" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="navMenu" aria-expanded="false" onclick="toggleMenu()">☰</button>
   </header>
 
   <!-- ==================== CONTACT CONTENT ==================== -->
@@ -44,7 +44,8 @@
 
     <!-- ===== CONTACT FORM ===== -->
     <section class="contact-form-section">
-      <form id="contactForm" novalidate>
+      <form id="contactForm">
+        <p class="form-note">This form opens a draft in your email application. You will need to press Send there.</p>
         <label for="name">Full Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your name" required />
 
@@ -54,7 +55,8 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
 
-        <button type="submit" class="btn-primary">Send Message</button>
+        <button type="submit" class="btn-primary">Open Email Draft</button>
+        <p id="contactFeedback" role="status" aria-live="polite"></p>
       </form>
     </section>
 
